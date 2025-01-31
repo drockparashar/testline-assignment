@@ -1,6 +1,13 @@
+
+https://github.com/user-attachments/assets/29b395b4-a58a-444b-a6f6-c972bc89f179
+Uploading Untitled video - Made with Clipchamp (1).mp4…
+
 # Quiz Application
 
-This is a Quiz Application built with Next.js and Zustand for state management. The application allows users to take quizzes, track their progress, and view their results.
+This is a Quiz Application built with Next.js and Zustand for state m
+
+
+anagement. The application allows users to take quizzes, track their progress, and view their results.
 
 ## Features
 
