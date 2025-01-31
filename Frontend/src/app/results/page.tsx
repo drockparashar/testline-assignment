@@ -101,10 +101,10 @@ export default function ResultsPage() {
         {/* Motivational Message */}
         <p className="text-center text-gray-500 text-sm">
           {accuracy >= 80 
-            ? "Excellent work! You've mastered this quiz!" 
+            ? "Excellent work! You&apos;ve mastered this quiz!" 
             : accuracy >= 60 
               ? "Good job! Keep practicing to improve your score!" 
-              : "Don't give up! Practice makes perfect!"}
+              : "Don&apos;t give up! Practice makes perfect!"}
         </p>
       </div>
     </main>

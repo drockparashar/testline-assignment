@@ -5,6 +5,12 @@ import { useRouter } from 'next/navigation';
 import { useQuizStore } from '../store';
 import { Timer, AlertCircle, ChevronRight, Brain } from 'lucide-react';
 
+type Option = {
+  id: number;
+  description: string;
+  is_correct: boolean;
+};
+
 export default function QuizPage() {
   const router = useRouter();
   const {
@@ -15,7 +21,6 @@ export default function QuizPage() {
     timeRemaining,
     setAnswer,
     nextQuestion,
-    previousQuestion,
     updateTime,
   } = useQuizStore();
 
@@ -109,7 +114,7 @@ export default function QuizPage() {
           </h2>
           
           <div className="space-y-4">
-            {currentQuestionData.options.map((option: any) => {
+            {currentQuestionData.options.map((option: Option) => {
               const isAnswered = answers[currentQuestionData.id] === option.id;
               let className = "w-full p-5 text-left rounded-xl border-2 transition-all duration-200 flex items-center justify-between ";
               

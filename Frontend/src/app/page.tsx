@@ -23,7 +23,11 @@ export default function HomePage() {
       startQuiz();
       router.push('/quiz');
     } catch (err) {
-      setError('Failed to load quiz. Please try again.');
+      if (err instanceof Error) {
+        setError(err.message);
+      } else {
+        setError('An unknown error occurred');
+      }
     } finally {
       setLoading(false);
     }
