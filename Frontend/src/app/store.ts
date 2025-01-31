@@ -1,5 +1,6 @@
 // app/store.ts
 import { create } from 'zustand';
+import { QuizData } from './types'; // Adjust the import path as necessary
 
 interface QuizState {
   currentQuestion: number;
