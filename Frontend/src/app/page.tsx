@@ -17,7 +17,7 @@ export default function HomePage() {
     setError(null);
     
     try {
-      const response = await fetch('http://localhost:5000/quiz-data');
+      const response = await fetch('https://testline-assignment.onrender.com/quiz-data');
       const data: QuizData = await response.json();
       setQuizData(data);
       startQuiz();
