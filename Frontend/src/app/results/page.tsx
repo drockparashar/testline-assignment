@@ -39,7 +39,7 @@ export default function ResultsPage() {
             Quiz Complete!
           </h1>
           <p className="text-gray-600 text-lg">
-            Here's how you performed on the quiz
+            Here&apos;s how you performed on the quiz
           </p>
         </div>
 
